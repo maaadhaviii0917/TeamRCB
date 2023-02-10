@@ -22,7 +22,7 @@ public class GetTeamData {
 	
 	//getPlayersJsonArrayFromTeamRCB.JSONFile
 	public JSONArray getPlayers(String teamName){	
-		JSONObject teamInfo=JsonFileReader.readInputJsonFile("TeamRCB");
+		JSONObject teamInfo=JsonFileReader.readInputJsonFile(teamName);
 		try {
 			players=new JSONArray();
 			players = (JSONArray) teamInfo.get("player");
